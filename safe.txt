@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meniu-mancare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/e313640c27.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Modern+Antiqua&family=Niconne&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="body-map">
+    <a href="meniu.html">Meniu</a>
+    <p> >> </p>
+    <a href="meniu-mancare.html">Street Food</a>
+</div>
+<div class="container-title">
+    <h1>Mancare</h1>
+</div>
+
+<div class="body-meniu">
+
+    <div class="card-item">
+        <div class="container-mancare-pret">
+            <img class="poza-mancare" src="meniu-StreetFood/aripioare.webp">
+        </div>
+        <div class="content-item">
+            <h1>CRISPY STRIPS CU CARTOFI PRAJITI</h1>
+            <div class="line-separator"></div>
+            <span class="pret">
+                45 lei
+            </span>
+        </div>
+        <div class="gramaj1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M80-80q0-111 29.5-189.5T185-400q46-52 103-80.5T400-520v-120q-137-17-228.5-84.5T80-880h800q0 88-91.5 155.5T560-640v120q55 11 112 39.5T775-400q46 52 75.5 130.5T880-80H640v-80h155q-18-152-113.5-220T480-448q-106 0-201.5 68T165-160h155v80H80Zm400-635q91 0 162-24.5T755-800H205q42 36 113 60.5T480-715Zm0 635q-33 0-56.5-23.5T400-160q0-17 6.5-31t17.5-25q24-24 81-50.5T640-320q-28 78-54 135t-50 81q-11 11-25 17.5T480-80Zm0-635Z"/></svg>
+            <p>Cantitate: 400g</p>
+        </div>
+        <div class="descriere-item">
+            <p>Crispy strips de pui impreuna cu o portie de cartofi prajiti sau cartofi wedges si un sos la alegere din cele 7 sosuri ale noastre.</p>
+        </div>
+        <ul class="valori-nutritionale">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="undefined"><path d="M646-80q-100 0-167-67t-67-167q0-100 67-167t167-67q100 0 167 67t67 167q0 100-67 167T646-80Zm0-60q72 0 123-51t51-123q0-72-51-123t-123-51q-72 0-123 51t-51 123q0 72 51 123t123 51Zm-506-20q-24 0-42-18t-18-42v-330q0-13 1.5-21t6.5-19l92-200h-22q-15 0-24.5-9.5T124-824v-22q0-15 9.5-24.5T158-880h261q15 0 24.5 9.5T453-846v22q0 15-9.5 24.5T419-790h-22l96 222q-12 6-25 15t-24 18L329-790h-82L140-559v339h224q3 15 10 31t15 29H140Zm506-438q-36 0-60-24t-24-60q0-36 24-60t60-24v168q0-36 24-60t60-24q36 0 60 24t24 60H646Z"/></svg>
+            <li>CRISPY STRIPS 200 G </li>
+            <li>CARTOFI PRAJITI 200 G </li>
+            <li>SOS LA ALEGERE 80 G </li>
+        </ul>
+    </div>
+
+    <div class="card-item">
+        <div class="container-mancare-pret">
+            <img class="poza-mancare" src="meniu-StreetFood/burger.webp">
+        </div>
+        <div class="content-item">
+            <h1>SUPREME BURGER 100% BLACK ANGUS</h1>
+            <div class="line-separator"></div>
+            <span class="pret">
+                55 lei
+            </span>
+        </div>
+        <div class="gramaj1">
+            <p>Cantitate: 550g</p>
+        </div>
+        <div class="descriere-item">
+            <p>Crispy strips de pui impreuna cu o portie de cartofi prajiti sau cartofi wedges si un sos la alegere din cele 7 sosuri ale noastre.</p>
+        </div>
+        <ul class="valori-nutritionale">
+            <li>CRISPY STRIPS 200 G </li>
+            <li>CARTOFI PRAJITI 200 G </li>
+            <li>SOS LA ALEGERE 80 G </li>
+        </ul>
+    </div>
+
+    <div class="card-item">
+        <div class="container-mancare-pret">
+            <img class="poza-mancare" src="meniu-StreetFood/quesadilia.webp">
+        </div>
+        <div class="content-item">
+            <h1>QUESADILIA DE PUI CU CARTOFI PRAJITI</h1>
+            <div class="line-separator"></div>
+            <span class="pret">
+                45 lei
+            </span>
+        </div>
+        <div class="gramaj1">
+            <p>Cantitate: 450g</p>
+        </div>
+        <div class="descriere-item">
+            <p>Crispy strips de pui impreuna cu o portie de cartofi prajiti sau cartofi wedges si un sos la alegere din cele 7 sosuri ale noastre.</p>
+        </div>
+        <ul class="valori-nutritionale">
+            <li>CRISPY STRIPS 200 G </li>
+            <li>CARTOFI PRAJITI 200 G </li>
+            <li>SOS LA ALEGERE 80 G </li>
+        </ul>
+    </div>
+    
+
+    <!--
+
+    <div class="card-item">
+        <div class="container-mancare-pret">
+            <img class="poza-mancare" src="meniu-StreetFood/burger.webp">
+            <span class="pret">
+                <strong>35</strong> RON
+            </span>
+        </div>
+        
+        <div class="content-item">
+            <h1>SUPREME BURGER 100% BLACK ANGUS</h1>
+           
+        </div>
+        <div class="gramaj1">
+            <p>550g</p>
+        </div>
+        <div class="descriere-item">
+            <p>Papanasi cu dulceata de afine si smantana</p>
+        </div>
+        <div class="valori-nutritionale">
+            Contine 2100 Kcal, ulei lapte, vita , prajeala etc.
+        </div>
+    </div>
+
+    <div class="card-item">
+        <div class="container-mancare-pret">
+            <img class="poza-mancare" src="meniu-StreetFood/quesadilia.webp">
+            <span class="pret">
+                <strong>35</strong> RON
+            </span>
+        </div>
+        <div class="content-item">
+            <h1>QUESADILIA DE PUI CU CARTOFI PRAJITI</h1>
+        </div>
+        <div class="gramaj1">
+            <p>550g</p>
+        </div>
+        <div class="descriere-item">
+            <p>Strips de Pui cu cartofi wedges si sos aioli</p>
+        </div>
+        <div class="valori-nutritionale">
+            Contine 2100 Kcal, ulei lapte, vita , prajeala etc.
+        </div>
+    </div>
+
+    
+    <div class="card-item2">
+        <img class="poza-mancare2" src="meniu-StreetFood/aripioare.webp">
+        <div class="content-item2">
+            <h1>CRISPY STRIPS CU CARTOFI PRAJITI - 35 RON</h1>
+            <p class="gramaj">350g</p>
+           
+            <div class="descriere-item2">
+                <p>Crispy strips de pui impreuna cu o portie de cartofi prajiti sau cartofi wedges si un sos la alegere din cele 7 sosuri ale noastre.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-item2">
+        <img class="poza-mancare2" src="meniu-StreetFood/burger.webp">
+        <div class="content-item2">
+            <h1>SUPREME BURGER 100% BLACK ANGUS - 60 RON</h1>
+            <p class="gramaj">350g</p>
+           
+            <div class="descriere-item2">
+                <p>Supreme cheeseburger cu garnitura de cartofi prajiti sau wedges, salata coleslaw, inele de ceapa si un sos la alegere din cele 7 sosuri ale noastre. </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-item2">
+        <img class="poza-mancare2" src="meniu-StreetFood/quesadilia.webp">
+        <div class="content-item2">
+            <h1>Clatita Dubai - 55RON</h1>
+            <p class="gramaj">350g</p>
+           
+            <div class="descriere-item2">
+                <p>Quesadilla de pui vine insotita de o portie de cartofi prajiti sau cartofi wedges si un sos la alegere din cele 7 sosuri ale noastre.</p>
+            </div>
+        </div>
+    </div>
+    -->
+
+</div>
+
+<div class="body-focus">
+    <i class="fa-solid fa-x"></i>
+    <div class="card-item-focus">
+        <div class="container-pret-imagine-focus">
+            <span class="pret"></span>
+            <img src="images/hookah.webp">
+        </div>
+       
+        <div class="content-item-focus">
+            <h1></h1>
+        </div>
+        <h3>Descriere Produs</h3>
+        <div class="descriere-item-focus">
+            <p></p>
+        </div>
+        <h3>Ingrediente/Continut</h3>
+        <ul class="valori-nutritionale-focus">
+            
+        </ul>
+    </div>
+   
+
+</div>
+
+    
+  
+    
+  
+   
+
+
+
+<script>
+    const Body = document.body;
+    const FundalMeniu = document.querySelector('.body-meniu')
+    const focusFundal = document.querySelector('.body-focus');
+    const ImgFocus = document.querySelector('.body-focus img');
+    const TiltuFocus = document.querySelector('.body-focus h1');
+    const pretFocus = document.querySelector('.body-focus .pret');
+    const DetailFocus = document.querySelector('.descriere-item-focus p');
+    const NutrientiFocus = document.querySelector('.valori-nutritionale-focus');
+    const ItemsFood = document.querySelectorAll('.card-item');
+    const ItemFocus = document.querySelector('.card-item-focus');
+    const CloseFcous = document.querySelector('.body-focus i')
+
+    ItemsFood.forEach(item => {
+        item.addEventListener('click', (event)=>{
+            const ImgClick = item.querySelector('.body-meniu img');
+            const TiltuClick = item.querySelector('.body-meniu h1');
+            const pretClick = item.querySelector('.body-meniu .pret');
+            const DetailClick = item.querySelector('.descriere-item p');
+            const NutrientiClick = item.querySelector('.valori-nutritionale');
+
+            ImgFocus.src = ImgClick.src;
+            TiltuFocus.textContent = TiltuClick.textContent;
+            pretFocus.textContent = pretClick.textContent;
+            DetailFocus.textContent = DetailClick.textContent;
+            DetailFocus.classList.add('TextStyle')
+            NutrientiFocus.innerHTML = NutrientiClick.innerHTML;
+            ItemFocus.classList.add('selected');
+            focusFundal.classList.add('selected');
+            FundalMeniu.classList.add('hidden');
+            Body.classList.add('no-scroll');
+            setTimeout( ()=>{
+                CloseFcous.style.display = 'block';
+            },100);
+        })
+    })
+
+    document.addEventListener('click', (event) => {
+        if (!ItemFocus.contains(event.target) && !event.target.closest('.body-meniu')) {
+            ItemFocus.classList.remove('selected');
+            focusFundal.classList.remove('selected');
+            FundalMeniu.classList.remove('hidden');
+            CloseFcous.style.display = 'none';
+            Body.classList.remove('no-scroll');
+        }
+    });
+
+    CloseFcous.addEventListener('click',()=>{
+        ItemFocus.classList.remove('selected');
+        focusFundal.classList.remove('selected');
+        FundalMeniu.classList.remove('hidden');
+        CloseFcous.style.display = 'none';
+        Body.classList.remove('no-scroll');
+    })
+
+
+    const dropMenu = document.querySelector('.drop-menu');
+
+        function ShowSide(){
+            const box = document.querySelector('.box')
+            const linie1 = document.querySelector('.linie1')
+            const linie2 = document.querySelector('.linie2')
+            const linie3 = document.querySelector('.linie3')
+            const sidebar = document.querySelector('.sidebar')
+            const main = document.querySelector('.main-content')
+
+            box.classList.toggle('show')
+            linie1.classList.toggle('cross')
+            linie2.classList.toggle('cross')
+            linie3.classList.toggle('cross')
+            dropMenu.classList.toggle('view');
+            box.classList.toggle('move')
+            }
+
+</script>
+</body>
+</html>
