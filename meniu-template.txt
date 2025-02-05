@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meniu-mancare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" href="images/tileable_image.webp" as="image">
+    <script src="meniu.js"></script>
+    <script src="https://kit.fontawesome.com/e313640c27.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Modern+Antiqua&family=Niconne&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div class="Open-Close-SideMeniu">
+
+        <div class="open-side-meniu">
+            <i class="fa-solid fa-book-open"></i>
+            Meniu
+        </div>
+        <div class="close-side-meniu">
+            <i class="fa-solid fa-x"></i>
+        </div>
+       
+    </div>
+   
+
+<div class="body-sidebar-meniu">
+    
+    
+    <div class="sidebar-meniu">
+        <div class="logo-meniu">
+            <div class="linie-logo-meniu"></div>
+                <img src="logo-eminescu.png">
+            <div class="linie-logo-meniu"></div>
+        </div>
+        <div class="content-meniu-sidebar">
+            
+
+            <div class="item-selector-sidebar">
+                <a href="meniu-medgedia.html">
+                    Acasa
+                </a>
+            </div>
+            <div class="item-selector-sidebar">
+                <a href="bar.html">
+                    Bar
+                </a>
+            </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-racoritoare.html">
+                        BAUTURI RACORITOARE
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-cafea.html">
+                        BAUTURI CALDE
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-spirtoase.html">
+                        BAUTURI SPIRTOASE
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-ceai.html">
+                        SPECIALITATI CEAI
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-limonada.html">
+                        FRESH & LIMONADA
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-frappe.html">
+                        FRAPPE
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-mikshake.html">
+                        MILKSHAKE
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-bere.html">
+                        BERE
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-longDrinks.html">
+                        LONG DRINKS
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-shot.html">
+                        SHOT
+                    </a>
+                </div>
+                <div class="item-selector-sidebar">
+                    <a href="folder-bar/bar-specialCocktail.html">
+                        SPECIALITATI COCKTAIL
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<div class="container-title">
+    <h1>BAR</h1>
+</div>
+
+<div class="body-meniu">
+
+     <div class="card-item">
+         <div class="container-mancare-pret">
+            <div class="loading-screen-meniuItem">
+                <h4>Infinity Lounge</h4>
+                <div class="loading-bar"></div>
+            </div>
+            <img class="poza-mancare" src="mancare-vita/muschi.png">
+        </div>
+        <div class="content-item">
+            <h1>MUSCHI FILE DE VITA LA GRATAR</h1>
+            <div class="line-separator"></div>
+            <span class="pret">90 lei</span>
+        </div>
+        <div class="gramaj1">
+            <p>Cantitate: 250g</p>
+        </div>
+        <div class="descriere-item">
+            <p></p>
+        </div>
+        <ul class="valori-nutritionale">
+            <li>MUSCHIULET DE VITA 250g</li>
+        </ul>
+    </div>
+
+   
+</div>
+
+<div class="body-focus">
+    <i class="fa-solid fa-x"></i>
+    <div class="card-item-focus">
+        <div class="container-pret-imagine-focus">
+            <img src="">
+        </div>
+       
+        <div class="content-item-focus">
+            <h1></h1>
+            <div class="line-separator-focus"></div>
+            <span class="pret">
+              
+            </span>
+        </div>
+        <h3>Descriere Produs</h3>
+        <div class="descriere-item-focus">
+            <p></p>
+        </div>
+        <h3>Ingrediente/Continut</h3>
+        <ul class="valori-nutritionale-focus">
+            
+        </ul>
+    </div>
+</div>
+    
+  
+</body>
+</html>
+
+
+pentru chatGpt
+
+iti voi da o structura html <div class="card-item">
+        <div class="container-mancare-pret">
+            <div class="loading-screen-meniuItem">
+                <h4>Infinity Lounge</h4>
+                <div class="loading-bar"></div>
+            </div>
+            <img class="poza-mancare" src="mancare-vita/muschi.png">
+        </div>
+        <div class="content-item">
+            <h1>CRISPY STRIPS CU CARTOFI PRAJITI</h1>
+            <div class="line-separator"></div>
+            <span class="pret">
+                42 lei
+            </span>
+        </div>
+        <div class="gramaj1">
+            <p>Cantitate: 400g</p>
+        </div>
+        <div class="descriere-item">
+            <p>Crispy strips de pui impreuna cu o portie de cartofi prajiti sau cartofi wedges si un sos la alegere din cele 7 sosuri ale noastre.</p>
+        </div>
+        <ul class="valori-nutritionale">
+            <li>CRISPY STRIPS 200g </li>
+            <li>CARTOFI PRAJITI 200g </li>
+            <li>SOS LA ALEGERE 80g </li>
+        </ul>
+    </div>
+    eu iti dau o lista cu text din care vreau sa preiei fiecare element si sa l inserezi in structura html de mai sus iar la partea cu ingrediente vreau sa schimbi "G" cu "g" si sa stergi spatiul dintre acesta si cuvantul din ainte

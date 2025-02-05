@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meniu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preload" href=" images/fundal-meniu.webp" as="image">
+    <script src="https://kit.fontawesome.com/e313640c27.js" crossorigin="anonymous"></script>
+    <script src="meniu.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Modern+Antiqua&family=Niconne&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+    const LogoMeniu = document.querySelector('.logo img');
+        
+        if (sessionStorage.getItem('Medgedia') === 'true')
+        {
+         LogoMeniu.style.height = '85px';
+         LogoMeniu.style.width = '98px';
+        }
+        else {
+        LogoMeniu.style.height = '85px';
+        LogoMeniu.style.width = '90px';
+        }
+    });
+</script>
+
+<div class="header">
+    <div class="logo">
+            <a href="">
+                <img src="logo-medgedia.png">
+            </a>
+    </div>
+
+    <div class="box" onclick="ShowSide()">
+        <div class="linie1"></div>
+        <div class="linie2"></div>
+        <div class="linie3"></div>
+    </div>
+
+    <div class="drop-menu">
+        <li><a href="acasa-medgedia.html"><i class="fa-solid fa-house"></i>Acasa</a></li>
+        <li><a href="despre-noi.html"><i class="fa-solid fa-address-card"></i></i>Despre Noi</a></li>
+        <li><a href="meniu-medgedia.html"><i class="fa-solid fa-pizza-slice"></i>Meniu</a></li>
+        <li><a href="#footer"><i class="fa-solid fa-phone"></i>Contact</a></li>
+    </div>
+</div>
+
+
+
+<div class="TelIcon">
+    <a href="tel:0771 548 637" target="_blank" >
+        <i class="fa-solid fa-phone"></i>
+    </a>
+</div>
+
+
+<div class="body-meniu">
+
+    <div class="card-meniu">
+        <img src="meniu-images/bauturi.webp">
+        <a href="bar.html">
+            <h1>Bar</h1>
+        </a>
+    </div>
+    <div class="card-meniu">
+        <img src="meniu-images/papanasi.webp">
+        <a href="meniu-desert.html">
+            <h1>Deserturi</h1>
+        </a>
+    </div>
+    <div class="card-meniu">
+        <img src="meniu-images/narghilea.webp">
+        <a href="meniu-narghilea.html">
+            <h1>Narghilea</h1>
+        </a>
+    </div>
+    
+
+</div>
+
+
+
+<div id="footer" class="footer">
+    <img id="footer-img" src="footer.png">
+    <div class="informatii-footer">
+        <div class="rezervari">
+            <h1>Rezervari</h1>
+            <a href="tel:0771 548 637" class="info-tel">
+                0771 548 637
+            </a>
+        </div>
+
+        <div class="program">
+            <h1>Program</h1>  
+            Zilnic: 16-04 
+        </div>
+        <div class="locatie">
+            <h1>Locatie</h1>
+            Strada Independenței, Medgedia
+        </div>
+    </div>
+
+<div class="social-media">
+    <h1>Social Media</h1>
+    <div class="icons">
+    <a id="instagram" href="https://www.instagram.com/infinity_hookah_medgidia/">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    </div>
+</div>
+
+<div class="autor">
+    ©Infinity Lounge | Toate Drepturile Rezervate - Created By Dinu George
+</div>
+</div>
+
+
+<script>
+    const dropMenu = document.querySelector('.drop-menu');
+
+        function ShowSide(){
+            const box = document.querySelector('.box')
+            const linie1 = document.querySelector('.linie1')
+            const linie2 = document.querySelector('.linie2')
+            const linie3 = document.querySelector('.linie3')
+            const sidebar = document.querySelector('.sidebar')
+            const main = document.querySelector('.main-content')
+
+            box.classList.toggle('show')
+            linie1.classList.toggle('cross')
+            linie2.classList.toggle('cross')
+            linie3.classList.toggle('cross')
+            dropMenu.classList.toggle('view');
+            box.classList.toggle('move')
+            }
+
+    sessionStorage.setItem('Medgedia','true');
+</script>
+</body>
+</html>
