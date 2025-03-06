@@ -1,0 +1,677 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Modern+Antiqua&family=Niconne&family=Playwrite+VN:wght@100..400&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+.header{
+    width: 100%;
+    height:87px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo{
+   width:100px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+}
+
+.logo a{
+    width: 100%;
+    height: 100%;  
+}
+.logo img{
+    width: 90px;
+    height: 85px;
+  
+}
+
+
+
+/*
+.logo{
+   width: 94px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+  justify-content: center;
+}
+
+.logo a{
+    width: 100%;
+    height: 100%;
+}
+.logo img{
+    width: 100%;
+    height: 99%;
+}
+*/
+
+.box {
+    width:clamp(35px,5vw,80px);
+    height:clamp(80px,5vw,80px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    z-index: 999;
+    filter: none;
+    display: flex;
+}
+
+
+.linie1 {
+    border-radius: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 600ms ease-in-out,translate 600ms ease-in-out,scale 600ms ease-in-out;
+}
+
+.linie1.cross {
+    transform: rotate(45deg);
+    translate:0 10px;
+}
+.linie2.cross {
+    transform: rotate(-45deg);
+}
+.linie3.cross {
+    opacity: 0;
+}
+
+.linie2 {
+    border-radius: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 600ms ease-in-out,translate 600ms ease-in-out,scale 600ms ease-in-out;
+}
+
+.linie3 {
+    border-radius: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    transition:opacity 400ms ease-in-out;
+}
+
+.to-drop-menu{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 12px;
+    font-size: 32px;
+    padding: 15px;
+}
+.to-drop-menu i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+.to-drop-menu i.selected{
+    visibility: visible;
+    opacity: 1;
+}
+/* !!!!De Schimbat dupa Update-ul cu Medgidia!!!! */
+.drop-menu{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 0px;
+    overflow: hidden;
+    transition: all 400ms ease-in-out;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.drop-menu.view{
+   height:200px;
+}
+.drop-menu li{
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    -webkit-tap-highlight-color: transparent; 
+    -webkit-user-select: none; 
+    user-select: none;
+}
+
+.drop-menu li:hover > a{
+    color: red;
+    transform: scale(1.15);
+}
+.drop menu li::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 2px;
+    bottom: 0;
+    background-color: red;
+}
+.drop-menu li a{
+    transition: all 400ms ease-in-out;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 22px;
+}
+.drop-menu li:nth-child(1){
+    margin-top: 12px;
+}
+.drop-menu li:nth-child(4){
+    margin-bottom: 12px;
+}
+
+.TelIcon{
+    background-color: red;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 9999;
+    transition: all 150ms ease-in-out;
+}
+.TelIcon a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-orizontal{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height:100%;
+}
+.navbar-orizontal ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:clamp(20px,3vw,50px);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.navbar-orizontal ul li{
+    list-style-type: none;
+    font-size:clamp(16px,2.3vw,30px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 0 0 20px black;
+}
+
+.navbar-orizontal ul li::before{
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    height:0;
+    background-image: linear-gradient(to top,red,transparent);
+    width: 110%;
+    transition: all 400ms ease-in-out;
+    border-radius: 7px;
+}
+
+.navbar-orizontal ul li a{
+    color: white;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 400ms ease-in-out;
+}
+
+.navbar-orizontal ul li:hover::before{
+    height: 60px;
+}
+.navbar-orizontal ul li:hover a{
+    scale: 1.1;
+}
+@media(max-width:749px){
+    .navbar-orizontal{
+        display: none;
+    }
+}
+@media(min-width:750px){
+    .header{
+        height: 108px;
+    }
+    .box{
+        display: none;
+    }
+    .logo img{
+        width: 110px;
+        height: 110px;
+    }
+   
+}
+
+/* aici se termina sectiunea header */
+
+.body-location-selector{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 550ms ease-in-out;
+}
+.location-selector{
+    width: 75%;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 40px;
+    padding:0 25px;
+    border: 1px solid red;
+}
+.infinity-eminescu,
+.infinity-medgidia{
+    background-color: red;
+    text-align: center;
+    width: 95%;
+    font-size: 26px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.body-meniu{
+    background-image: url("images/fundal-meniuri.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color:#4A4951;
+}
+.card-meniu{
+    width: 98%;
+    position: relative;
+    height: 250px;
+    transition: all 200ms ease-in-out ;
+}
+.card-meniu img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+.card-meniu video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+.card-meniu img:nth-child(1){
+    object-position: 50% 60%;
+}
+.card-meniu a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.card-meniu h1{
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    text-shadow: 0 0 20px black;
+}
+#Meniu-Mancare.unavailable{
+    filter: grayscale(1) brightness(0.8);
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+
+.loading-screen-meniuItem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition:all 250ms ease-in-out;
+    flex-direction: column;
+    gap: 10px;
+}
+.loading-screen-meniuItem h4{
+    margin: 0;
+    font-size: 24px;
+}
+.loading-bar {
+    margin: 0;
+    width: 50%; 
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%; 
+    animation: shine 4s linear infinite; 
+}
+
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+.loading-screen-meniuItem.LoadComplete{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* aici incepe sectiunea de footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    height:fit-content;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+#footer-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px) brightness(0.4);
+}
+.text-footer{
+    width:85%;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    display: none;
+    line-height: 1.5;
+}
+
+.icon-footer{
+    display: flex;
+    display: none;
+    justify-content: center;
+}
+.icon-footer img{
+    width:110px;
+    height: 110px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+.informatii-footer{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(22px, 5vw,40px);
+    text-align:center;
+    width: 100%;
+    gap: 40px;
+    position: relative;
+}
+.program,
+.rezervari a,
+.locatie{
+    line-height: 1.5;
+}
+.rezervari a{
+    font-size: 24px;
+    padding: 5px;
+}
+.locatie{
+    font-size: clamp(24px,4vw,24px);
+}
+
+.informatii-footer h1{
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+.informatii-footer a{
+    text-decoration: none;
+    color: white;
+   
+}
+.container-locatii{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    position: relative;
+}
+.redirect-location{
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    justify-content:center;
+    height:40px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+.redirect-location-separator{
+    height: 90%;
+    width: 1.5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.redirect-location a:nth-child(1){
+    width: min-content;
+    line-height: 1.2;
+    font-size: 16px;
+}
+.redirect-location a{
+    padding: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.social-media{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.social-media h1{
+    margin: 0;
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.icons i{
+    margin-left: 15px;
+    font-size: clamp(36px,6vw,54px);
+    color: red;
+}
+
+.autor {
+    font-size:clamp(18px,4vw,27px);
+    text-align: center;
+    padding-bottom: 10px;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    line-height: 1.25;
+}
+@media(min-width:750px){
+    .autor{
+        margin-bottom: 0px;
+    }
+    .footer{
+        background-image: url("background-smoke.jpg");
+        background-position: center;
+        background-size: contain;
+        position: relative;
+        padding-bottom: 24px;
+    }
+    .footer::before{
+        position: absolute;
+        content:"";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(2px);
+        z-index: 0;
+    }
+    #footer-img{
+        opacity: 0;
+    }
+    .locatie{
+        margin-top: 40px;
+        line-height: 1.5;
+        font-size: clamp(20px,2.5vw,32px);
+    }
+    .program{
+        line-height: 1.5;
+        font-size: clamp(20px,2.5vw,32px);
+    }
+    .rezervari{
+        line-height: 1.5;
+        font-size: clamp(20px,2.5vw,32px);
+    }
+    .informatii-footer {
+        position: relative;
+        width: fit-content;
+        margin-left: 16px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .social-media h1{
+        font-size: 36px;
+    }
+    .social-media{
+        gap: 14px;
+    }
+}
+
+
+
+@media(min-width:700px){
+    .body-meniu{
+        background-image: url("images/fundal-meniuri.png");
+        background-position: center;
+        background-repeat: repeat;
+        background-size: contain;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card-meniu{
+        width: 40%;
+        position: relative;
+        height: 300px;
+        transition: all 200ms ease-in-out ;
+    }
+    .card-meniu img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.9);
+    }
+}
