@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Modern+Antiqua&family=Niconne&family=Playwrite+VN:wght@100..400&display=swap');
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100dvh;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+body h1{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    width: max-content;
+    font-weight: 600;
+    font-size: 44px;
+    text-shadow: 0 0 20px black;
+     font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+body h1 strong{
+    color: red;
+    font-size: 46px;
+    margin-right: 4px;
+}
+h1::before{
+    content: "";
+    width:90%;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+}
+.container-video{
+    position: relative;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-video p{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-shadow: 0 0 20px black;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+.container-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.5);
+}
+.container-alege-locatie{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom:5px;
+    left: 0;
+}
+.container-alege-locatie a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locatie-eminescu,
+.locatie-medgidia{
+    background-color: red;
+    border-radius: 10px;
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    gap: 5px;
+    font-weight: 800;
+    font-size: clamp(16px,5vw,22px);
+    line-height: 1.3;
+    padding: 2px;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+.locatie-eminescu img{
+    display: none;
+    width: 105px;
+    height: 100px;
+    clip-path: circle(50% at 50% 50%);
+}
+.locatie-medgidia img{
+    display: none;
+    width: 100px;
+    height: 90px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+
+.main-container-wide{
+    width: 98%;
+    height: 82vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 0.7fr;
+    grid-template-rows: 1fr 0.7fr;
+    gap: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main-container-wide::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.2px);
+}
+.main-text{
+    position: absolute;
+    color: white;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 10;
+    gap: 24px;
+}
+#WelcomeImg{
+    filter: contrast(1.25);
+}
+.main-text h3{
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: 120px;
+    width:max-content;
+    text-align: center;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+      line-height: 1;
+      text-shadow: 0 0 20px black;
+      text-align: center;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+}
+.main-text h5{
+    color: white;
+    z-index: 2;
+    font-size: 44px;
+    width:100%;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+      line-height: 1;
+      text-shadow: 0 0 20px black;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 52px;
+}
+.main-text h3::before{
+    content: "";
+    width:90%;
+    height: 6px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+}
+.content-main-wide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.content-main-wide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#PozaEtaj2{
+    filter: contrast(1.45);
+}
+.content-main-wide:nth-child(2){
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.content-main-wide:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.content-main-wide:nth-child(4){
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+.content-main-wide:nth-child(5){
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.content-main-wide video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    filter: brightness(1.5);
+    object-fit: cover;
+}
+.content-main-wide p{
+    position: relative;
+    color: white;
+    z-index:1;
+    font-size: 24px;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    display:none;
+    font-variation-settings:
+      "slnt" 0;
+      line-height: 1;
+      text-shadow: 0 0 20px black;
+      text-align: center;
+      line-height: 1.2;
+}
+
+.container-alege-locatie2{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    backdrop-filter: blur(0px);
+   position: absolute;
+   bottom: -15%;
+   left: 0;
+   z-index: 10;
+}
+.container-alege-locatie2 a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locatie-eminescu2,
+.locatie-medgidia2{
+    background-color: red;
+    border-radius: 10px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    gap: 5px;
+    font-weight: 800;
+    font-size: clamp(16px,5vw,22px);
+    line-height: 1.3;
+    padding: 12px;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+.locatie-eminescu2 img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50% at 50% 50%);
+}
+.locatie-medgidia2 img{
+    display: flex;
+    width: 90px;
+    height: 80px;
+    clip-path: circle(50% at 50% 50%);
+}
+@media(min-width:700px){
+    body{
+        padding-bottom: 28px;
+    }
+    .container-video{
+        display: none;
+    }
+    .main-container-wide{
+        display: grid;
+    }
+}
+@media(max-width:699px){
+    .container-video{
+        display: block;
+    }
+    .main-container-wide{
+        display: none;
+    }
+}
+/*
+@media (min-width:650px){
+    .container-video{
+        position: relative;
+        width: 100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-video video{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(1.5);
+    }
+    .container-alege-locatie{
+        display: flex;
+        width: 100%;
+        height: 75px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        backdrop-filter: blur(2px);
+        position: absolute;
+        bottom:5px;
+        left: 0;
+    }
+    body h1{
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+        width: max-content;
+        font-weight: 600;
+        font-size: 42px;
+        text-shadow: 0 0 20px black;
+    }
+    body h1 strong{
+        color: red;
+        font-size: 44px;
+        margin-right: 4px;
+    }
+    h1::before{
+        content: "";
+        width:90%;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: red;
+    }
+}
+
+/* Loading Screen */
+
+.LoadingScreenMain{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 700ms ease-in-out;
+    z-index: 9999999;
+}
+.LoadingScreenMain.ContentLoaded{
+    opacity: 0;
+    visibility: hidden;
+    top:-100%;
+    pointer-events: none;
+}
+
+.LoadingScreenMain svg{
+    height: 175px;
+    margin: 0;
+}
+.LoadingScreenMain svg path {
+    stroke: red; 
+    stroke-width: 4;
+    fill: none;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500; 
+    animation: draw 4s ease-in-out infinite alternate;
+}
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 1500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.container-loading-continut{
+    width:max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28px;
+    margin: 0;
+}
+.container-loading-continut h1{
+    width:max-content;
+    font-size: 36px;
+    margin: 0;
+    position: relative;
+}
+.container-loading-continut h1::before{
+    content: "";
+    width:90%;
+    height: 3px;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+}
+.container-loading-continut h3{
+    width: max-content;
+    font-size: 28px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.container-loading-continut h3 strong{
+    color: red;
+    font-size: 26px;
+    margin-right: 3px;
+}
+@media(max-width:700px){
+    .container-loading-continut h1{
+        font-size: 26px;
+    }
+    .container-loading-continut h3{
+        font-size: 20px;
+    }
+    .LoadingScreenMain svg{
+        height: 120px;
+        margin: 0;
+    }
+}
