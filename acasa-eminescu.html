@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="acasa-eminescu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="logo-eminescu.png" type="image/x-icon">
     <meta property="og:title" content="Infinity Lounge - Întreaga gamă premium Maklaud te așteaptă"/>
     <meta property="og:description" content="Vino la INFINITY LOUNGE EMINESCU și bucură-te de o experiență completă: narghilea aromată,cocktailuri rafinate și preparate delicioase, toate intr-un ambient select și relaxant" />
@@ -13,10 +12,9 @@
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="1063">
     <meta property="og:image:height" content="598">
-    <meta property="og:url" content="https://www.infinity-lounge.ro"/>
+    <meta property="og:url" content="https://www.infinity-lounge.ro/"/>
     <meta property="og:type" content="website"/>
     <script src="https://kit.fontawesome.com/e313640c27.js" crossorigin="anonymous"></script>
-    <link rel="preload" href="images/fundal-meniuri.png" as="image">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <script type="application/ld+json">
@@ -113,7 +111,7 @@
 <div class="header">
     <div class="logo">
             <a href="acasa-eminescu.html">
-                <img src="logo-eminescu.png" alt="logo Infinity Lounge Eminescu">
+                 <img src="logo-eminescu.webp" alt="logo Infinity Lounge Eminescu">
             </a>
     </div>
 
@@ -150,7 +148,7 @@
 
     <div class="main-container">
         <video id="video" playsinline muted loop preload="auto">
-            <source src="video-narghilele/video-narghilea-prezentare-converted3.mp4" type="video/mp4">
+            <source src="video-narghilele/video-narghilea-prezentare-converted_h265_2.mp4" type="video/mp4">
         </video>
         
 
@@ -193,7 +191,7 @@
     <div class="sub-body1">
 
         <div class="content-sub-body">
-            <img class="Fundal-SubBody1" src="dark-grunge-texture.jpg" alt="">
+            <img class="Fundal-SubBody1" src="dark-grunge-texture3.webp" alt="">
             <h1 id="CancanH1">
                 Infinity Lounge Eminescu
             </h1>
@@ -313,14 +311,14 @@
                 <img loading="lazy" class="NarghileaBackground" src="background-smoke.jpg"  alt="">
                 <img loading="lazy" class="NarghileaModel" src="images-arome/darkness.webp" alt="">
                 <h3>Maklaud Darkness</h3>
-                <video src="video-narghilele/darkness3_1080.mp4" playsinline muted></video>
+                <video src="video-narghilele/darkness3_1080_h265.mp4" playsinline muted></video>
                 <i class="fa-regular fa-circle-play"></i>
             </div>
             <div class="card-narghilea">
                 <img loading="lazy"  class="NarghileaBackground" src="background-smoke.jpg"  alt="">
                 <img loading="lazy" class="NarghileaModel" src="images-arome/caves.webp" alt="">
                 <h3>MAKLAUD THE CAVES</h3>
-                <video src="video-narghilele/caves.mp4" playsinline muted></video>
+                <video src="video-narghilele/caves_h265.mp4" playsinline muted></video>
                 <i class="fa-regular fa-circle-play"></i>
             </div>
             <div class="card-narghilea">
@@ -412,7 +410,7 @@
         <div class="container-galerie">
             
             <div class="imagine-galerie">
-                <video src="video-narghilele/video-mancare-hookah-converted.mp4" playsinline muted></video>
+                <video src="video-narghilele/video-mancare-hookah-converted_h265.mp4" playsinline muted></video>
             </div>
             <div class="imagine-galerie">
                 <img loading="lazy" src="galery/img2.webp" alt="Ambianță plăcută și atmosferă relaxantă la Infinity Lounge">
@@ -440,7 +438,7 @@
             </div>
 
             <div class="imagine-galerie">
-                <video src="video-narghilele/video-mancare-hookah-converted.mp4" playsinline muted></video>
+                <video src="video-narghilele/video-mancare-hookah-converted_h265.mp4" playsinline muted></video>
             </div>
             <div class="imagine-galerie">
                 <img loading="lazy" src="galery/img2.webp" alt="">
@@ -660,7 +658,7 @@
   
 
     <div id="footer" class="footer">
-        <img id="footer-img" src="footer.png" alt="">
+        <img id="footer-img" src="footer.webp" alt="">
             <div class="informatii-footer">
                 <div class="rezervari">
                     <h1>Rezervari</h1>
@@ -729,15 +727,10 @@
 
         let index = 1;
         const vectPoze = [
-        "video-narghilele/video-narghilea-prezentare-converted3.mp4",
+        "video-narghilele/video-narghilea-prezentare-converted_h265_2.mp4",
         "images/shisha-father.webp",
         "images/clatita-dubai.webp"
         ]
-
-        vectPoze.forEach(src =>{
-            const imageLoad = new Image;
-            imageLoad.src = src;
-          })
 
         const TextFundal = document.querySelectorAll('.text');
         const FundalImg = document.querySelector('.main-container img');

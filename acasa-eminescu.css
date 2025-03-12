@@ -802,18 +802,29 @@ body{
 .body-narghilea{
     width: 100%;
     position: relative;
-    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: max-content;
     padding: 24px 0;
+    
     gap: 12px;
-    background-image: url("images/fundal-meniu3.png");
+    
+}
+.body-narghilea::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/fundal-meniu3.webp");
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
+    filter: contrast(108%);
+    z-index: 1;
 }
 
 .body-narghilea h1{
@@ -821,6 +832,7 @@ body{
     color: white;
     margin: 0;
     font-size: clamp(32px,5vw,50px);
+    z-index: 2;
 }
 .body-narghilea h1::before{
     content: "";
@@ -839,8 +851,10 @@ body{
     width: 88%;
     line-height: 1.5;
     font-size: 18px;
+    z-index: 2;
 }
 .container-narghilea{
+    z-index: 2;
     width: 96%;
     position: relative;
     gap: 36px;
@@ -937,6 +951,7 @@ body{
 }
 
 .CatreNarghileaMeniu{
+    z-index: 2;
     background-color: red;
     display: flex;
     justify-content: center;
@@ -1010,6 +1025,9 @@ body{
     .body-narghilea{
         background-repeat: repeat;
         background-size: contain;
+    }
+    .body-narghilea::before {
+       display: none;
     }
     .body-narghilea p{
       width: 96%;
@@ -2056,7 +2074,7 @@ body{
     }
     .body-meniu{
         height: auto;
-        background-image: url("images/fundal-meniuri.png");
+        background-image: url("images/fundal-meniuri.webp");
         background-position: center;
         background-repeat: repeat;
         background-size: contain;

@@ -329,7 +329,7 @@ body{
 }
 
 .body-meniu{
-    background-image: url("images/fundal-meniuri.png");
+    background-image: url("images/fundal-meniuri.webp");
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
@@ -650,7 +650,7 @@ body{
 
 @media(min-width:700px){
     .body-meniu{
-        background-image: url("images/fundal-meniuri.png");
+        background-image: url("images/fundal-meniuri.webp");
         background-position: center;
         background-repeat: repeat;
         background-size: contain;
