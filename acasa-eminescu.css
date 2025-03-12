@@ -2140,7 +2140,7 @@ body{
 .LoadingScreenMain.ContentLoaded{
     opacity: 0;
     visibility: hidden;
-    top:-100%;
+    transform: translateY(-100%);
     pointer-events: none;
 }
 
