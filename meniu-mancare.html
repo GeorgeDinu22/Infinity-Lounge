@@ -343,8 +343,26 @@
     </div>
 
     <div class="autor">
-        ©Infinity Lounge | Toate Drepturile Rezervate - Created By Dinu George
-    </div>
+    <span>©<span id="year"></span> Infinity Lounge | Toate drepturile rezervate</span>
+    <span class="separator">—</span>
+    <span>
+      Dezvoltat de 
+      <a 
+        class="autorLink"
+        href="https://www.georgeweb-design.ro/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        George Web Design
+      </a>
+    </span>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
+</script>
   </div>
 
 </body>

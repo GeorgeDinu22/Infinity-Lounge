@@ -1837,22 +1837,37 @@ body{
 }
 .icons i{
     margin-left: 15px;
-    font-size: clamp(36px,6vw,54px);
+    font-size: clamp(28px,6vw,44px);
     color: red;
 }
 
-.autor {
-    font-size:clamp(18px,4vw,27px);
+.autor{
+    font-size: clamp(14px,1.5vw,18px);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 12px;
     text-align: center;
-    padding-bottom: 10px;
-    opacity: 0.8;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    line-height: 1.25;
+    position: relative;
+    z-index: 2;
 }
+.autorLink{
+    color: white;
+    text-decoration: none;
+}
+.autorLink:hover{
+    color: #dadada;
+    cursor: pointer;
+}
+.separator{
+    display: none;
+}
+
 @media(min-width:750px){
     .autor{
         margin-bottom: 0px;
@@ -1862,7 +1877,7 @@ body{
         background-position: center;
         background-size: contain;
         position: relative;
-        padding-bottom: 24px;
+        padding-bottom: 12px;
     }
     .footer::before{
         position: absolute;
@@ -1905,6 +1920,12 @@ body{
     }
     .social-media{
         gap: 14px;
+    }
+    .separator{
+        display: block;
+    }
+    .autor{
+        flex-direction: row;
     }
 }
 
