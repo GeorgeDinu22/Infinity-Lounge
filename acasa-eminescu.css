@@ -166,8 +166,9 @@ body{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     font-size: 22px;
 }
 .drop-menu li:nth-child(1){
@@ -244,6 +245,7 @@ body{
     color: white;
     display: flex;
     gap: 10px;
+    align-items: center;
     text-decoration: none;
     transition: all 400ms ease-in-out;
 }
@@ -330,65 +332,6 @@ body{
     transition: opacity 500ms ease-in-out;
     filter: brightness(0.85);
 }
-/*
-@media(min-width:750px){
-    .main-container{
-        height: 80vh;
-        margin-top: 16px;
-    }
-    .main-container video{
-        width: 80%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        filter: brightness(1);
-        transition: opacity 500ms ease-in-out;
-        transform: translate(-50%,-50%);
-    }
-    .main-container img{
-        width: 80%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(1);
-        transition: opacity 500ms ease-in-out;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-}
-@media(min-width:950px){
-    .main-container{
-        height: 80vh;
-        margin-top: 16px;
-    }
-    .main-container video{
-        width: 80%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(1);
-        transition: opacity 500ms ease-in-out;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    .main-container img{
-        width: 94%;
-        height: 94%;
-        object-fit: cover;
-        filter: brightness(1);
-        transition: opacity 500ms ease-in-out;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-}
-*/
-
 
 .main-container-wide{
     width: 100%;
