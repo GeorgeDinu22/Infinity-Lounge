@@ -22,7 +22,7 @@ body{
     align-items: center;
     height:100dvh;
     background-color: black;
-    background-image: url("images-medgidia/narghilea.JPG");
+    background-image: url("https://infinity-lounge.b-cdn.net/static/images-medgidia/narghilea.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -121,7 +121,7 @@ body::before{
         margin-top: 32px;
     }
     body{
-        background-image: url("background-smoke.jpg");
+        background-image: url("https://infinity-lounge.b-cdn.net/static/background-smoke.jpg");
         background-position: center;
         background-repeat: repeat;
         background-size: contain; 

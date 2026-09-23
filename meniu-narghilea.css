@@ -8,7 +8,7 @@ body{
     padding: 0;
     overflow-x: hidden;
     font-family: 'Helvetica', Arial, sans-serif;
-    background-image: url("images/fundal-meniuri.webp");
+    background-image: url("https://infinity-lounge.b-cdn.net/static/images/fundal-meniuri.webp");
     background-position: center;
     position: relative;
     background-size: contain;
@@ -482,7 +482,7 @@ body{
     justify-content: center;
     border-bottom: 1px solid black;
     background-color: black;
-    background-image: url("background-smoke.jpg");
+    background-image: url("https://infinity-lounge.b-cdn.net/static/background-smoke.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -1007,7 +1007,7 @@ body{
         margin-bottom: 0px;
     }
     .footer{
-        background-image: url("background-smoke.jpg");
+        background-image: url("https://infinity-lounge.b-cdn.net/static/background-smoke.jpg");
         background-position: center;
         background-size: contain;
         position: relative;

@@ -182,7 +182,7 @@ ContainerImgMeniu.forEach(container =>{
     const LogoMeniu = document.querySelector('.logo-meniu img');
     if (LogoMeniu){
         if(sessionStorage.getItem('medgidia') === 'true'){
-            LogoMeniu.src = "logo-medgidia.png";
+            LogoMeniu.src = "https://infinity-lounge.b-cdn.net/static/logo-medgidia.png";
         }
     }
 

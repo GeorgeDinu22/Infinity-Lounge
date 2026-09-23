@@ -8,7 +8,7 @@ body{
     padding: 0;
     overflow-x: hidden;
     font-family: 'Helvetica', Arial, sans-serif;
-    background-image: url("images/fundal-meniuri.webp");
+    background-image: url("https://infinity-lounge.b-cdn.net/static/images/fundal-meniuri.webp");
     background-position: center;
     position: relative;
     background-size: contain;
@@ -789,7 +789,7 @@ body.no-scroll{
         margin-bottom: 0px;
     }
     .footer{
-        background-image: url("background-smoke.jpg");
+        background-image: url("https://infinity-lounge.b-cdn.net/static/background-smoke.jpg");
         background-position: center;
         background-size: contain;
         position: relative;

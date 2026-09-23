@@ -762,7 +762,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/fundal-meniu3.webp");
+    background-image: url("https://infinity-lounge.b-cdn.net/static/images/fundal-meniu3.webp");
     background-position: center;
     background-size: contain;
     background-repeat: repeat;
@@ -1816,7 +1816,7 @@ body{
         margin-bottom: 0px;
     }
     .footer{
-        background-image: url("background-smoke.jpg");
+        background-image: url("https://infinity-lounge.b-cdn.net/static/background-smoke.jpg");
         background-position: center;
         background-size: contain;
         position: relative;
@@ -2038,7 +2038,7 @@ body{
     }
     .body-meniu{
         height: auto;
-        background-image: url("images/fundal-meniuri.webp");
+        background-image: url("https://infinity-lounge.b-cdn.net/static/images/fundal-meniuri.webp");
         background-position: center;
         background-repeat: repeat;
         background-size: contain;
